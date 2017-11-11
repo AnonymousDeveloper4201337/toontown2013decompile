@@ -153,7 +153,7 @@ class ToontownClientRepository(OTPClientRepository.OTPClientRepository):
                                 
                                 try:
                                     toon.setDNA(dna)
-                                continue
+                                    continue
                                 except Exception:
                                     e = None
                                     print e
