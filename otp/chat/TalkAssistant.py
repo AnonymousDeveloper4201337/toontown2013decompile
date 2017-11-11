@@ -241,7 +241,7 @@ class TalkAssistant(DirectObject.DirectObject):
             if word == '' or base.whiteList.isWord(word):
                 newwords.append(word)
                 continue
-            newwords.append('\x1WLRed\x1' + word + '\x2')
+            newwords.append('\x01WLRed\x01' + word + '\x02')
         
         newText = ' '.join(newwords)
         return newText
@@ -322,21 +322,20 @@ class TalkAssistant(DirectObject.DirectObject):
                 
                 exec message in globals(), TalkAssistant.ExecNamespace
                 return 'ok'
+            except:
+                exception = sys.exc_info()[0]
+                extraInfo = sys.exc_info()[1]
+                if extraInfo:
+                    return str(extraInfo)
+                else:
+                    return str(exception)
+        except:
             exception = sys.exc_info()[0]
             extraInfo = sys.exc_info()[1]
             if extraInfo:
                 return str(extraInfo)
             else:
                 return str(exception)
-
-        
-
-        exception = sys.exc_info()[0]
-        extraInfo = sys.exc_info()[1]
-        if extraInfo:
-            return str(extraInfo)
-        else:
-            return str(exception)
 
     
     def checkOpenTypedChat(self):
