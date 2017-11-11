@@ -1517,8 +1517,9 @@ class OTPClientRepository(ClientRepositoryBase):
                         guiObj = callback.im_self
                         if hasattr(guiObj, 'getCreationStackTraceCompactStr'):
                             msg += '\n   CREATIONSTACKTRACE:%s' % guiObj.getCreationStackTraceCompactStr()
-                    continue
-                    continue
+                            continue
+                    except:
+                        continue
 
                 
             
@@ -2139,7 +2140,6 @@ class OTPClientRepository(ClientRepositoryBase):
 
     
     def getPlayerAvatars(self):
-        continue
         return _[1]
 
     
