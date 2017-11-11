@@ -66,7 +66,8 @@ class ToontownLoader(Loader.Loader):
                 
                 try:
                     base.cr.considerHeartbeat()
-
+                except:
+                    pass
             
         
 
