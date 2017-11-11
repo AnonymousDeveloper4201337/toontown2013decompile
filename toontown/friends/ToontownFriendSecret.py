@@ -9,8 +9,8 @@ from otp.friends.FriendSecret import AccountSecret
 from otp.friends.FriendSecret import AvatarSecret
 from otp.friends.FriendSecret import BothSecrets
 from otp.friends import FriendSecret
-globalFriendSecret = globalFriendSecret
 import otp.friends.FriendSecret
+from otp.friends.FriendSecret import globalFriendSecret
 from otp.friends.FriendSecret import showFriendSecret
 from otp.friends.FriendSecret import hideFriendSecret
 from otp.friends.FriendSecret import unloadFriendSecret

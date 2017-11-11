@@ -951,7 +951,8 @@ class Toon(Avatar.Avatar, ToonHead):
                 
                 try:
                     texName = ToonDNA.BoyShorts[self.style.botTex]
-                texName = ToonDNA.BoyShorts[0]
+                except:
+                    texName = ToonDNA.BoyShorts[0]
 
             else:
                 

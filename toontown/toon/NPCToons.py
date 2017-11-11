@@ -956,7 +956,6 @@ def getNPCName(npcId):
 
 
 def npcFriendsMinMaxStars(minStars, maxStars):
-    continue
     return _[1]
 
 

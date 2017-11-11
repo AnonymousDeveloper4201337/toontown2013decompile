@@ -1,8 +1,6 @@
 # File: t (Python 2.4)
 
-ESGenerating = ESGenerating
-ESGenerated = ESGenerated
-from direct.distributed.DistributedObject import ESNum2Str
+from direct.distributed.DistributedObject import ESGenerating, ESGenerated, ESNum2Str
 
 class DelayDeletable:
     DelayDeleteSerialGen = SerialNumGen()
